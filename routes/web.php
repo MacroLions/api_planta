@@ -19,3 +19,6 @@ $router->get('/', function () use ($router) {
 
 
 $router->get('/plantas', 'PlantaController@getAll');
+$router->get('/plantas/{id}', 'PlantaController@getById');
+$router->get('/plantas/save/{id}/{nombre}', 'PlantaController@agregarPlanta');
+$router->get('/plantas/delete/{id}', 'PlantaController@borrarPlanta');
